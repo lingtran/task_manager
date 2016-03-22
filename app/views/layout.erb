@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/application.css">
+    <title>My Sinatra Application</title>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="nav navbar-nav">
+
+        <div class="btn-group" role="group" aria-label="...">
+          <div class="btn-group" role="group">
+            <a href="/"><button type="button" class="btn btn-md navbar-btn glyphicon glyphicon-home" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Home"></button></a>
+          </div>
+
+          <div class="btn-group" role="group">
+            <a href="/tasks"><button type="button" class="btn btn-primary btn-md glyphicon glyphicon-th-list navbar-btn" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="Task Index"></button></a>
+          </div>
+
+          <div class="btn-group" role="group">
+            <a href="/tasks/new"><button type="button" class="btn btn-primary btn-md glyphicon glyphicon-pencil navbar-btn" aria-haspopup="true" aria-expanded="true" data-toggle="tooltip" data-placement="bottom" title="New Task"></button></a>
+          </div>
+        </div>
+
+      <%= yield %>
+
+      <script src='js/tether.min.js'></script>
+      <script src='js/bootstrap.js'></script>
+    </div>
+
+  </body>
+</html>
