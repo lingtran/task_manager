@@ -15,4 +15,10 @@ tasks:
 - id: 5
   title: pizza
   description: maybe
-total: 5
+- id: 6
+  title: 早餐
+  description: 给猫猫吃
+- id: 7
+  title: 練習する
+  description: 毎日のプローグラミングの練習する事
+total: 7
